@@ -1,0 +1,13 @@
+@use './variables';
+
+footer {
+    height: 70vh;
+    width: 100%;
+    padding: 100px;
+    background-color: variables.$blue7;
+    text-align: center;
+    background-image: url(../images/png/bg_img_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}

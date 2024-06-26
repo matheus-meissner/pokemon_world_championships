@@ -7,13 +7,19 @@
         background-image: linear-gradient(180deg, variables.$blue1, variables.$blue2);
     }
     &--ux-ui {
-        background-image: linear-gradient(180deg, variables.$blue2, variables.$pink1);
+        background-image: linear-gradient(180deg, variables.$blue2, variables.$blue3);
     }
     &--data-science {
-        background-image: linear-gradient(180deg, variables.$pink1, variables.$yellow1);
+        background-image: linear-gradient(180deg, variables.$blue3, variables.$blue4);
     }
     &--backend {
-        background-image: linear-gradient(180deg, variables.$yellow1, variables.$pink1);
+        background-image: linear-gradient(180deg, variables.$blue4, variables.$blue5);
+    }
+    &--teste1 {
+        background-image: linear-gradient(180deg, variables.$blue5, variables.$blue6);
+    }
+    &--teste2 {
+        background-image: linear-gradient(180deg, variables.$blue6, variables.$blue7);
     }
 
     &--image-left {
