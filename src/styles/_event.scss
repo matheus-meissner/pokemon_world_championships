@@ -34,7 +34,9 @@
     }
 
     &__image {
-        max-width: 360px;
+        max-width: 480px;
+        border: 1px solid variables.$blue6; /* Largura da borda */
+        border-radius: 16px;
     }
 
     &__details {
@@ -48,6 +50,27 @@
         &__description {
             font-size: 16px;
             line-height: 22px;
+            margin-bottom: 32px;
+        }
+
+        &__participants {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px; /* Espaço entre as imagens, ajuste conforme necessário */
+
+            &__card {
+                background-color: variables.$blue4;
+                padding: 16px;
+                border: 10px solid variables.$blue1;
+                // border-radius: 400px;
+
+                &--img {
+                    height: 150px;
+                    border: 5px solid variables.$blue7;
+                    border-radius: 10px;
+                    // object-fit: cover;
+                }
+            }
         }
     }
 
