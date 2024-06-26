@@ -5,16 +5,16 @@
 @use '../styles/_variables';
 @use '../styles/_footer';
 
-@font-face {
-    font-family: 'Haveko';
-    src: url(../fonts/Haveko.woff2);
-}
+// @font-face {
+//     font-family: 'Haveko';
+//     src: url(../fonts/Haveko.woff2);
+// }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Haveko', sans-serif;
+    font-family: "Varela Round", sans-serif;
     color: variables.$pink1;
     list-style: none;
 }

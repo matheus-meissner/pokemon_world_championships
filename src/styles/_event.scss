@@ -59,16 +59,69 @@
             gap: 32px; /* Espaço entre as imagens, ajuste conforme necessário */
 
             &__card {
+                min-height: 300px;
+                width: 200px;
                 background-color: variables.$blue4;
                 padding: 16px;
-                border: 10px solid variables.$blue1;
-                // border-radius: 400px;
+                border: 5px solid variables.$blue1;
+                border-radius: 20%;
+                position: relative;
+                overflow: hidden;
+                display: flex; /* Adicionado para usar flexbox */
+                flex-direction: column;
+                align-items: center; /* Centraliza horizontalmente */
+                text-align: center;
+                filter: drop-shadow(-15px 15px 3px variables.$blue7);
 
                 &--img {
                     height: 150px;
+                    width: 150px;
                     border: 5px solid variables.$blue7;
-                    border-radius: 10px;
-                    // object-fit: cover;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-top: 2px; /* Move a imagem dentro do contêiner */
+                    filter: drop-shadow(-3px 3px 3px variables.$blue7);
+                }
+
+                &--title {
+                    font-weight: 700;
+                    font-size: 24px;
+                    margin-top: 16px;
+                    background: variables.$gradient-text2;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    transition: all 3s;
+
+                    &:hover {
+                        filter: hue-rotate(360deg);
+                    }
+                }
+
+                &--text {
+                    color: variables.$blue7;
+                    font-weight: 400;
+                    font-size: 20px;
+                    margin-top: 8px;
+                }
+
+                &--footer {
+                    font-weight: 200;
+                    font-size: 18px;
+                    margin-top: 8px;
+                    background: variables.$gradient-text2;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    transition: all 3s;
+
+                    &:hover {
+                        filter: hue-rotate(360deg);
+                    }
+
+                    &-aria {
+                        margin-top: 32px;
+                    }
                 }
             }
         }
