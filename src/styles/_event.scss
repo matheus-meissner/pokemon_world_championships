@@ -28,6 +28,11 @@
         }
     }
 
+    &--participants {
+        display: flex;
+        
+    }
+
     .container {
         display: flex;
         gap: 40px;
