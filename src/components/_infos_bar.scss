@@ -2,9 +2,13 @@
 
 .infos-bar {
     padding: 16px 24px;
-    background-color: variables.$textColor1;
+    background-color: rgba($color: variables.$pink1, $alpha: 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid variables.$pink1;
+    border-radius: 16px;
     display: flex;
     justify-content: space-between;
+
 
     &__infos {
         display: flex;

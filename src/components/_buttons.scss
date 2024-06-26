@@ -7,10 +7,18 @@
     text-decoration: none;
     text-align: center;
     white-space: nowrap;
+    border: 1px solid variables.$pink1;
+    border-radius: 16px;
 
     &--primary {
         color: variables.$textColor1;
-        background-color: variables.$corBotaoPrimario;
+        background: variables.$gradient-text1;
+        transition: all 1.5s;
+
+        &:hover {
+            filter: hue-rotate(360deg);
+            transform: scale(1.05);
+        }
     }
 
     @media (max-width: 640px) {

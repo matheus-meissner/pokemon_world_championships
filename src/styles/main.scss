@@ -5,12 +5,17 @@
 @use '../styles/_variables';
 @use '../styles/_footer';
 
+@font-face {
+    font-family: 'Haveko', sans-serif;
+    src: url(../fonts/Haveko.woff2);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-    color: variables.$textColor1;
+    font-family: 'Haveko', sans-serif;
+    color: variables.$pink1;
     list-style: none;
 }
 .container {
