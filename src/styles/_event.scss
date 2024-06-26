@@ -3,22 +3,16 @@
 .event {
     padding: 80px 0;
 
-    &--frontend {
-        background-image: linear-gradient(180deg, variables.$blue1, variables.$blue2);
+    &--mundial {
+        background-image: linear-gradient(180deg, variables.$blue1, variables.$blue3);
     }
-    &--ux-ui {
-        background-image: linear-gradient(180deg, variables.$blue2, variables.$blue3);
+    &--atividades {
+        background-image: linear-gradient(180deg, variables.$blue3, variables.$blue5);
     }
-    &--data-science {
-        background-image: linear-gradient(180deg, variables.$blue3, variables.$blue4);
-    }
-    &--backend {
-        background-image: linear-gradient(180deg, variables.$blue4, variables.$blue5);
-    }
-    &--teste1 {
+    &--programacao {
         background-image: linear-gradient(180deg, variables.$blue5, variables.$blue6);
     }
-    &--teste2 {
+    &--participantes {
         background-image: linear-gradient(180deg, variables.$blue6, variables.$blue7);
     }
 
@@ -69,7 +63,7 @@
                 background-color: variables.$blue4;
                 padding: 16px;
                 border: 5px solid variables.$blue1;
-                border-radius: 20%;
+                border-radius: 25px;
                 position: relative;
                 overflow: hidden;
                 display: flex; /* Adicionado para usar flexbox */
