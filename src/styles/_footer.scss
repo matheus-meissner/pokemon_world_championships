@@ -53,8 +53,12 @@
         @media (max-width: 640px) {
             display: grid;
             grid-template-columns: repeat(2, 1fr); /* Duas colunas de tamanho igual */
+            justify-content: center; /* Centralizar colunas no container */
+            margin-left: 37%;
             &__item {
+                
                 &--cat {
+                    display: flex;
                     &-company {
                         height: 17px;
                     }
@@ -70,8 +74,11 @@
         @media (min-width: 641px) and (max-width: 1023px) {
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* Duas colunas de tamanho igual */
+            justify-content: center; /* Centralizar colunas no container */
+            margin-left: 18%;
             &__item {
                 &--cat {
+                    display: flex;
                     &-company {
                         height: 20px;
                     }
@@ -85,8 +92,10 @@
             }
         }
         @media (min-width: 1024px) and (max-width: 1366px) {
+            justify-content: center; /* Centralizar colunas no container */
             &__item {
                 &--cat {
+                    display: flex;
                     &-company {
                         height: 25px;
                     }
