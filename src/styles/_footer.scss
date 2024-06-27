@@ -1,13 +1,182 @@
 @use './variables';
 
-footer {
-    height: 70vh;
+.footer {
+    min-height: 70vh;
     width: 100%;
-    padding: 100px;
+    padding: 100px 100px 30px;
     background-color: variables.$blue7;
     text-align: center;
     background-image: url(../images/png/bg_img_footer.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+
+    @media (max-width: 640px) {
+        padding: 30px 30px 30px;
+    }
+
+    @media (min-width: 641px) and (max-width: 1023px) {
+        min-height: 50vh;
+        padding: 30px 30px 0px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+        min-height: 40vh;
+        padding: 30px 30px 0px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        &__item {
+            &--cat {
+                flex: 1 1 calc(33.33% - 20px); /* 3 cards por linha, subtraindo o espaço do gap */
+                max-width: calc(33.33% - 20px);
+                justify-content: center;
+                align-items: center;
+                &-company {
+                    height: 30px;
+                }
+                &-center {
+                    height: 45px;
+                }
+                &-geral {
+                    height: 80px;
+                }
+            }
+        }
+
+        @media (max-width: 640px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Duas colunas de tamanho igual */
+            &__item {
+                &--cat {
+                    &-company {
+                        height: 17px;
+                    }
+                    &-center {
+                        height: 21px;
+                    }
+                    &-geral {
+                        height: 70px;
+                    }
+                }
+            }
+        }
+        @media (min-width: 641px) and (max-width: 1023px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Duas colunas de tamanho igual */
+            &__item {
+                &--cat {
+                    &-company {
+                        height: 20px;
+                    }
+                    &-center {
+                        height: 30px;
+                    }
+                    &-geral {
+                        height: 70px;
+                    }
+                }
+            }
+        }
+        @media (min-width: 1024px) and (max-width: 1366px) {
+            &__item {
+                &--cat {
+                    &-company {
+                        height: 25px;
+                    }
+                    &-center {
+                        height: 45px;
+                    }
+                    &-geral {
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: center; /* Centraliza os itens */
+        align-items: center;
+        gap: 10px;
+        margin-top: 32px;
+        &__item {
+            &--social {
+                img {
+                    height: 60px;
+                    transition: all 1.5s;
+
+                    &:hover {
+                        filter: hue-rotate(360deg);
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+    &__livre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+        gap: calc(100% - 500px);
+        &__item {
+            &--livre {
+                img {
+                    height: 60px;
+                    
+                    @media (max-width: 640px) {
+                        height: 50px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 640px) {
+            gap: calc(100% - 200px);
+        }
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+        gap: 15px;
+        &--item {
+            font-size: 14px;
+            a {
+                text-decoration: none;
+                color: variables.$blue1;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        @media (max-width: 640px) {
+            flex-wrap: nowrap;
+            .footer__link--item {
+                font-size: 10px;
+            }
+        }
+    }
+    &__text {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        &--item {
+            font-size: 14px;
+            color: variables.$blue1;
+        }
+
+        @media (max-width: 640px) {
+            &--item {
+                font-size: 10px;
+            }
+        }
+    }
 }

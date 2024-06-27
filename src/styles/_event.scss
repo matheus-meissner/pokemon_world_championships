@@ -56,7 +56,7 @@
             background-clip: text;
 
             &--mundial {
-                background: variables.$gradient-text3;
+                background: variables.$gradient-text2;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
@@ -93,6 +93,7 @@
             flex-wrap: wrap;
             gap: 90px; /* Espaço entre as imagens, ajuste conforme necessário */
             justify-content: center; /* Centraliza os cards horizontalmente */
+            margin-bottom: 40px;
 
             &__card {
                 flex: 1 1 calc(33.33% - 90px); /* 3 cards por linha, subtraindo o espaço do gap */
